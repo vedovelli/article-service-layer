@@ -1,5 +1,3 @@
-import { Response } from 'miragejs';
-
 /*
  * Mirage JS guide on Routes: https://miragejs.com/docs/route-handlers/functions
  */
@@ -12,8 +10,7 @@ export default function routes() {
    * operation. .get(), .post(), .put() and delete().
    * Mirage JS guide on Resource: https://miragejs.com/docs/route-handlers/shorthands#resource-helper
    */
-  // this.resource('users');
-  this.get('users', () => new Response(500, {}, 'Server is down'));
+  this.resource('users');
   this.resource('products');
 
   /*
